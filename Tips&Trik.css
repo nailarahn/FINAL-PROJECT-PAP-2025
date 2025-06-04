@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+  --hijau: #70AD6D;
+  --kuning: #EDAF2A;
+  --putih: #FFFFFF;
+  --hitam: #252525;
+  --green-hover: #659C62;
+  --green-active: #5A8A57;
+  --dark: #2E7D32;
+}
+
+html,body{
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--putih);
+  color: var(--hitam);
+  line-height: 1.6;
+  padding: 20px;
+}
+.navbar-nav{
+  gap: 20px;
+}
+.nav-link{
+  color: var(--hijau);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.nav-link:hover {
+  color: var(--green-hover);
+}
+.nav-link.active {
+  color: var(--green-active);
+}
+.dropdown-toggle{
+  color: var(--hijau);
+}
+.dropdown-toggle:focus,
+.dropdown-toggle:active,
+.dropdown-toggle::after,
+.show > .dropdown-toggle::after {
+  color: var(--green-active) !important;  
+}
+.dropdown-menu{
+  background-color: var(--putih);
+  border: 1px solid var(--hijau);
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.dropdown-item {
+  color: var(--hijau);
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 20px;
+}
+.dropdown-item:hover {
+  color: var(--green-hover);
+}
+.dropdown-item:focus{
+  color: var(--green-active);
+  background-color: var(--hijau);
+  color: var(--putih);
+}
+.main-container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.judul-utama{
+  margin-top: 100px;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--kuning);
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.judul-hijau-custom {
+  color: var(--hijau);
+  font-size: 32px;
+  font-weight: 600;
+  text-align: left;
+  margin: 0 0 18px 0;
+  padding: 0;
+  display: block;
+}
+
+.subsub-judul {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--hitam);
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+p, .text-regular {
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--hitam);
+  margin-bottom: 18px;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.intro-box {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.intro-text {
+  flex: 1 1 55%;
+  text-align: left;
+}
+
+.intro-image {
+  flex: 1 1 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro-image img {
+  max-width: 100%;
+  height: auto;
+  max-height: 350px;
+  object-fit: contain;
+  display: block;
+}
+
+#tips-container {
+  max-width: 100%;
+}
+
+.btn-tips {
+  background-color: var(--kuning);
+  color: var(--putih);
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-weight: 700;
+  max-width: 100%;
+}
+
+.btn-tips:hover {
+  background-color: #d99a1a;
+}
+
+.tip-card {
+  background-color: var(--hijau);
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px 0;
+  color: var(--putih);
+  cursor: pointer;
+  transition: background-color 0.3s;
+  max-width: 100%;
+  text-align: left;
+}
+
+.tip-card.active .tip-body p,
+.tip-card.active .tip-body strong {
+  color: var(--putih) !important;
+}
+
+.tip-card .tip-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-align: left;
+  color: var(--putih);
+}
+
+.tip-card.active {
+  background-color: var(--kuning);
+  color: var(--putih);
+}
+
+.tip-card.active .tip-title {
+  color: var(--putih) !important;
+}
+
+.tip-card .tip-body {
+  margin-top: 10px;
+  font-size: 20px;
+  display: none;
+  color: var(--putih);
+}
+
+.tip-card.active .tip-body {
+  display: block;
+  color: var(--putih) !important;
+}
+
+.footer-image {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  margin-left: -50vw;
+  margin-top: 40px;
+  text-align: center;
+  padding: 0;
+  overflow: hidden;
+}
+
+.footer-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: none;
+}
+
+/* RESPONSIVE untuk HP dan layar kecil */
+@media (max-width: 768px) {
+  .intro-box {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .intro-text,
+  .intro-image {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .intro-text h2,
+  .judul-hijau-custom,
+  h1 {
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .judul-hijau-custom {
+    font-size: 24px;
+  }
+
+  p, .text-regular {
+    font-size: 16px;
+  }
+
+  .btn-tips {
+    font-size: 16px;
+    padding: 12px 16px;
+  }
+
+  .tip-card {
+    padding: 15px;
+  }
+
+  .tip-card .tip-title {
+    font-size: 18px;
+  }
+
+  .tip-card .tip-body {
+    font-size: 16px;
+  }
+}

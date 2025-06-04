@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+:root {
+  --color-green: #70ad6d;
+  --color-white: #ffffff;
+  --color-black: #252525;
+  --green-hover: #659C62;
+  --green-active: #5A8A57;
+  --orange: #EDAF2A;
+  --lightOrange: #F9E6BD; 
+  --dark: #2E7D32;
+  --font-h1: 40px;
+  --font-sub: 32px;
+  --font-text: 20px;
+}
+html,body{
+    overflow-x: hidden;
+}
+body {
+  font-size: var(--font-text);
+  color: var(--color-black);
+  background-color: var(--color-white);
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar-nav{
+    gap: 20px;
+}
+.nav-link{
+    color: var(--color-green);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.nav-link:hover {
+    color: var(--green-hover);
+}
+.nav-link.active {
+    color: var(--green-active);
+}
+.dropdown-toggle{
+    color: var(--color-green);
+}
+.dropdown-toggle:focus,
+.dropdown-toggle:active,
+.dropdown-toggle::after,
+.show > .dropdown-toggle::after {
+  color: var(--green-active) !important;  
+}
+.dropdown-menu{
+    background-color: var(--color-white);
+    border: 1px solid var(--color-green);
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.dropdown-item {
+    color: var(--color-green);
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 20px;
+}
+.dropdown-item:hover {
+    color: var(--green-hover);
+}
+.dropdown-item:focus{
+    color: var(--green-active);
+    background-color: var(--color-green);
+    color: var(--white);
+}
+
+.intro h1 {
+  font-size: var(--font-sub);
+  font-weight: bold;
+  color: var(--color-green);
+  margin-top: 120px;
+}
+.intro p {
+  font-size: var(--font-text);
+  text-align: justify;
+}
+.intro-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 1rem;
+}
+
+.green-section {
+  background-color: var(--color-green);
+  color: var(--color-white);
+  padding: 4rem 1rem;
+  border-radius: 2rem;
+  margin-bottom: 2rem;
+}
+.green-section h2 {
+  font-size: var(--font-sub);
+  font-weight: 600;
+}
+.green-section p {
+  font-size: var(--font-text);
+}
+
+.team-wrapper {
+  background-color: var(--color-white);
+  color: var(--color-black);
+  padding: 2rem;
+  border-radius: 1rem;
+  margin-top: 3rem;
+}
+.team-wrapper h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: var(--font-sub);
+  font-weight: bold;
+}
+.team-wrapper p {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.team-card {
+  border: 2px solid var(--color-green);
+  border-radius: 1rem;
+  overflow: hidden;
+  background-color: var(--color-white);
+}
+.team-img {
+  height: 450px;
+  width: 100%;
+  object-fit: cover;
+}

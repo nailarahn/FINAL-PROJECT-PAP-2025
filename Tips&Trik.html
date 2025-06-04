@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+
+  <title>Tips & Trik Eco-Living</title>
+  <link rel="stylesheet" href="Tips&Trik.css" />
+</head>
+<body>
+  <header class="header">
+     
+    <nav class="navbar navbar-expand-lg fixed-top py-0" style="background-color: white;" data-bs-theme="light">
+      <div class="container">
+        <a href="LandingPage.html" class="navbar-brand">
+          <img src="assets/Logo EduCycle RB.png" alt="EcoCycle" width="142.14" height="99">
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="LandingPage.html">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="KelasOnline.html">Kelas Online</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="EC1.html">Event</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Konten Edukasi</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="Artikel.html">Artikel</a></li>
+                <li><a class="dropdown-item" href="Galeri.html">Galeri</a></li>
+                <li><a class="dropdown-item" href="Tips&Trik.html">Tips & Trik</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a  class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Profil Kami</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="Tentang-Kami.html">Tentang Kami</a></li>
+                <li><a class="dropdown-item" href="Kontak-Kami.html">Kontak Kami</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="main-container">
+    <h1 class="judul-utama">Tips & Trik Eco-Living</h1>
+
+    <div class="intro-box">
+      <div class="intro-text">
+        <h2 class="judul-hijau-custom">🌿 Tips & Trik Hidup Ramah Lingkungan</h2>
+        <p>
+          Mulai dari kebiasaan sederhana seperti mengurangi sampah plastik, menghemat energi, hingga memilih produk ramah lingkungan, semua langkah kecil ini bisa berdampak besar untuk menjaga bumi kita.
+        </p>
+        <p>
+          Dengan menerapkan gaya hidup hijau, kamu turut membantu melestarikan alam dan menciptakan lingkungan yang lebih sehat untuk masa depan. Jangan lewatkan juga inspirasi harian dari yang siap membantumu menjalani hidup lebih eco-friendly setiap hari💚
+        </p>
+        <button class="btn-tips" onclick="acakTips()">Tips & Trik Hari Ini</button>
+      </div>
+      <div class="intro-image">
+        <img src="assets/2 anak lingkungan.png" alt="Eco Living" />
+      </div>
+    </div>
+
+    <!-- Tips Cards -->
+    <div class="tip-card">
+      <div class="tip-title" onclick="toggleTips(0)">🛍️ Tips & Trik 1: Bawa kantong belanja sendiri</div>
+      <div class="tip-body">
+        <p><strong>Tips:</strong> Gunakan tas belanja kain untuk mengurangi penggunaan kantong plastik sekali pakai. Dengan membawa tas belanja sendiri, kamu membantu mengurangi limbah plastik yang mencemari lingkungan dan mendukung gaya hidup yang lebih berkelanjutan.</p>
+        <p><strong>Trik:</strong> Pilih tas belanja lipat yang ringan dan ringkas agar mudah dibawa di dalam tas atau saku. Pastikan selalu tersedia di kendaraan atau tas harianmu agar tidak lupa membawanya.</p>
+      </div>
+    </div>
+
+    <div class="tip-card">
+      <div class="tip-title" onclick="toggleTips(1)">🧴 Tips & Trik 2: Gunakan botol minum isi ulang</div>
+      <div class="tip-body">
+        <p><strong>Tips:</strong> Hindari membeli air kemasan sekali pakai untuk mengurangi sampah plastik yang sulit terurai di alam.</p>
+        <p><strong>Trik:</strong> Bawa selalu botol minum isi ulang dari rumah. Pilih botol yang tahan lama, ringan, dan mudah dibersihkan agar nyaman digunakan sehari-hari.</p>
+      </div>
+    </div>
+
+    <div class="tip-card">
+      <div class="tip-title" onclick="toggleTips(2)">💡 Tips & Trik 3: Matikan lampu saat tidak digunakan</div>
+      <div class="tip-body">
+        <p><strong>Tips:</strong> Biasakan untuk mematikan lampu saat keluar ruangan untuk menghemat energi dan mengurangi tagihan listrik.</p>
+        <p><strong>Trik:</strong> Pasang stiker pengingat kecil di dekat saklar atau gunakan smart lamp dengan sensor gerak agar lampu mati otomatis saat tidak ada orang.</p>
+      </div>
+    </div>
+
+    <div class="tip-card">
+      <div class="tip-title" onclick="toggleTips(3)">🌱 Tips & Trik 4: Gunakan komposter untuk sisa makanan</div>
+      <div class="tip-body">
+        <p><strong>Tips:</strong> Komposkan sisa makanan organik menjadi pupuk alami untuk mengurangi limbah dan menyuburkan tanaman.</p>
+        <p><strong>Trik:</strong> Buat komposter dari ember bekas atau beli komposter mini siap pakai yang mudah digunakan di rumah.</p>
+      </div>
+    </div>
+  </div>
+  <footer class="footer bg-white  mt-5 pt-4">
+    <div class="container text-center">
+
+      <div class="mb-3">
+        <img src="assets/Logo EduCycle RB.png" alt="EduCycle Logo" width="142.14" height="99">
+      </div>
+
+      <div class="d-flex justify-content-center gap-4 mb-3">
+        <a href="#"><img src="assets/Instagram.png" alt="Instagram" style="height: 28px;"></a>
+        <a href="#"><img src="assets/TikTok.png" alt="TikTok" style="height: 28px;"></a>
+        <a href="#"><img src="assets/Youtube.png" alt="Youtube" style="height: 28px;"></a>
+        <a href="#"><img src="assets/Social.png" alt="Social" style="height: 28px;"></a>
+      </div>
+    </div>
+    <hr class="border-success m-0">
+
+    <p class="text-success text-center py-2 m-0"> 
+      © 2025 Publikasi Kelompok 5 PTI B. All rights reserved.
+    </p>
+  </footer>
+  <script>
+    const tipCards = document.querySelectorAll('.tip-card');
+
+    function toggleTips(index) {
+      tipCards.forEach((card, i) => {
+        const body = card.querySelector('.tip-body');
+        if (i === index) {
+          const isActive = card.classList.contains('active');
+          card.classList.toggle('active', !isActive);
+          body.style.display = isActive ? 'none' : 'block';
+        } else {
+          card.classList.remove('active');
+          card.querySelector('.tip-body').style.display = 'none';
+        }
+      });
+    }
+
+    function acakTips() {
+      const randomIndex = Math.floor(Math.random() * tipCards.length);
+      toggleTips(randomIndex);
+      window.scrollTo({
+        top: tipCards[randomIndex].offsetTop - 50,
+        behavior: 'smooth'
+      });
+    }
+
+    window.onload = () => {
+      tipCards.forEach(card => {
+        card.querySelector('.tip-body').style.display = 'none';
+      });
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js" integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D" crossorigin="anonymous"></script>
+</body>
+</html>

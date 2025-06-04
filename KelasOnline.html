@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+
+  <title>Kelas Online EduCycle</title>
+  <link rel="stylesheet" href="kelasonline.css" />
+</head>
+<body>
+  <header class="header">
+     
+    <nav class="navbar navbar-expand-lg fixed-top py-0" style="background-color: white;" data-bs-theme="light">
+      <div class="container">
+        <a href="LandingPage.html" class="navbar-brand">
+          <img src="assets/Logo EduCycle RB.png" alt="EcoCycle" width="142.14" height="99">
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="LandingPage.html">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="KelasOnline.html">Kelas Online</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="EC1.html">Event</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Konten Edukasi</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="Artikel.html">Artikel</a></li>
+                <li><a class="dropdown-item" href="Galeri.html">Galeri</a></li>
+                <li><a class="dropdown-item" href="Tips&Trik.html">Tips & Trik</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a  class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Profil Kami</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="Tentang-Kami.html">Tentang Kami</a></li>
+                <li><a class="dropdown-item" href="Kontak-Kami.html">Kontak Kami</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1 class="judul-utama">Kelas Online EduCycle</h1>
+    <div class="hero-content">
+      <div class="hero-text">
+        <h2 class="subjudul">Satu belajar, sejuta harapan 🌱</h2>
+        <p>Selamat datang di Kelas Online kita yang penuh keceriaan dan ilmu bermanfaat. Di sini, kamu bisa belajar bagaimana cara memilah sampah dengan mudah, membuat karya kreatif dari barang bekas, dan menjalani gaya hidup yang ramah lingkungan.</p>
+        <p>Materi-materi kami sajikan lengkap dengan video-video menarik dan modul teks yang gampang dipahami, supaya kamu bisa belajar kapan saja dan di mana saja dengan santai dan asik. Yuk, mulai langkah kecilmu untuk bumi yang lebih hijau.</p>
+      </div>
+      <div class="hero-image">
+        <img src="assets/ilustrasi buang sampah (1).png" alt="Hero Image" />
+      </div>
+    </div>
+  </section>
+
+  <section class="content-wrapper">
+    <div class="video-section">
+      <div class="video-list">
+        <div class="video-card">
+          <p>Cara Memilah Sampah Rumah Tangga♻️</p>
+          <div class="tombol-kanan">
+            <button onclick="tampilkanVideo('sampah')">Tonton</button>
+          </div>
+        </div>
+        <div class="video-card">
+          <p>Proyek Daur Ulang Sederhana di Sekolah🏫♻️</p>
+          <div class="tombol-kanan">
+            <button onclick="tampilkanVideo('daurulang')">Tonton</button>
+          </div>
+        </div>
+        <div class="video-card">
+          <p>Gaya Hidup Eco-Friendly🌿🌍</p>
+          <div class="tombol-kanan">
+            <button onclick="tampilkanVideo('eco')">Tonton</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div id="videoContainer">
+          <iframe 
+            id="videoFrame" 
+            src="https://www.youtube.com/embed/23oH_aG_ns8?si=TCIZv9FHY9iC3lRO" 
+            frameborder="0" 
+            allowfullscreen
+          ></iframe>
+          <h3 id="judulVideo">Cara Memilah Sampah Rumah Tangga♻️</h3>
+          <p id="deskripsiVideo">
+            Mulai langkah kecil untuk menjaga lingkungan dengan memilah sampah dari rumah sendiri! Pelajari cara sederhana membedakan sampah organik seperti sisa makanan dan daun kering, dengan sampah anorganik seperti plastik, kaleng, dan kaca. Kebiasaan baik ini bisa dimulai dari dapur dan berdampak besar bagi bumi. Yuk, jadikan memilah sampah sebagai bagian dari gaya hidup sehari-hari!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer bg-white  mt-5 pt-4">
+    <div class="container text-center">
+
+      <div class="mb-3">
+        <img src="assets/Logo EduCycle RB.png" alt="EduCycle Logo" width="142.14" height="99">
+      </div>
+
+      <div class="d-flex justify-content-center gap-4 mb-3">
+        <a href="#"><img src="assets/Instagram.png" alt="Instagram" style="height: 28px;"></a>
+        <a href="#"><img src="assets/TikTok.png" alt="TikTok" style="height: 28px;"></a>
+        <a href="#"><img src="assets/Youtube.png" alt="Youtube" style="height: 28px;"></a>
+        <a href="#"><img src="assets/Social.png" alt="Social" style="height: 28px;"></a>
+      </div>
+    </div>
+    <hr class="border-success m-0">
+
+    <p class="text-success text-center py-2 m-0"> 
+      © 2025 Publikasi Kelompok 5 PTI B. All rights reserved.
+    </p>
+  </footer>
+
+  <script>
+    function tampilkanVideo(kode) {
+      const videoData = {
+        sampah: {
+          src: "https://www.youtube.com/embed/23oH_aG_ns8?si=TCIZv9FHY9iC3lRO",
+          judul: "Cara Memilah Sampah Rumah Tangga♻️",
+          deskripsi: "Mulai langkah kecil untuk menjaga lingkungan dengan memilah sampah dari rumah sendiri! Pelajari cara sederhana membedakan sampah organik seperti sisa makanan dan daun kering, dengan sampah anorganik seperti plastik, kaleng, dan kaca. Kebiasaan baik ini bisa dimulai dari dapur dan berdampak besar bagi bumi. Yuk, jadikan memilah sampah sebagai bagian dari gaya hidup sehari-hari!"
+        },
+        daurulang: {
+          src: "https://www.youtube.com/embed/YGjRvts84QI?si=--FjB-Jbm42jyOPz",
+          judul: "Proyek Daur Ulang Sederhana di Sekolah🏫♻️",
+          deskripsi: "Proyek ini mengajak kamu dan teman-teman di sekolah untuk bersama-sama memanfaatkan barang bekas atau sampah menjadi sesuatu yang berguna dan menarik. Selain seru, kegiatan ini juga mengajarkan kita untuk peduli lingkungan dengan cara yang mudah dan menyenangkan. Dengan kreativitas, kita bisa mengubah limbah menjadi produk baru yang bermanfaat dan sekaligus mengurangi sampah yang mencemari bumi."
+        },
+        eco: {
+          src: "https://www.youtube.com/embed/5i8XXXEYrGY?si=rhnSnPZlW89TsBmU",
+          judul: "Gaya Hidup Eco-Friendly🌿🌍",
+          deskripsi: "Mulailah dari kebiasaan kecil di rumah dan sekolah untuk lebih ramah lingkungan. Dengan memilah sampah, menggunakan kembali barang yang masih bisa dipakai, dan mengurangi sampah plastik, kita sudah ikut menjaga bumi. Perubahan kecil dari kamu bisa jadi kontribusi besar bagi lingkungan hidup yang lebih bersih dan sehat. Yuk, kita mulai hidup eco-friendly dari sekarang!"
+        }
+      };
+
+      const data = videoData[kode];
+      document.getElementById("videoFrame").src = data.src;
+      document.getElementById("judulVideo").textContent = data.judul;
+      document.getElementById("deskripsiVideo").textContent = data.deskripsi;
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js" integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D" crossorigin="anonymous"></script>
+</body>
+</html>

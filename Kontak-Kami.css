@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+  --green: #70AD6D;
+  --green-hover: #659C62;
+  --green-active: #5A8A57;
+  --orange: #EDAF2A;
+  --lightOrange: #F9E6BD; 
+  --dark: #2E7D32;
+  --white: #fff;
+  --text: #333;
+
+}
+
+* { 
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0; 
+    font-family: 'Poppins', sans-serif;
+}
+html, body {
+  overflow-x: hidden;
+}
+body { 
+  font-family: Poppins; 
+  background: #fff; 
+  color: #333; 
+  padding: 20px; 
+}
+
+.navbar-nav{
+    gap: 20px;
+}
+.nav-link{
+    color: var(--green);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.nav-link:hover {
+    color: var(--green-hover);
+}
+.nav-link.active {
+    color: var(--green-active);
+}
+.dropdown-toggle{
+    color: var(--green);
+}
+.dropdown-toggle:focus,
+.dropdown-toggle:active,
+.dropdown-toggle::after,
+.show > .dropdown-toggle::after {
+  color: var(--green-active) !important;  
+}
+.dropdown-menu{
+    background-color: var(--white);
+    border: 1px solid var(--green);
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.dropdown-item {
+    color: var(--green);
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 20px;
+}
+.dropdown-item:hover {
+    color: var(--green-hover);
+}
+.dropdown-item:focus{
+    color: var(--green-active);
+    background-color: var(--green);
+    color: var(--white);
+}
+.contact-container { 
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 40px; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    margin-top: 100px;
+}
+.contact-info { 
+    background: #fff; 
+    padding: 20px; 
+    border-radius: 8px; 
+    flex: 1 1 320px; 
+}
+.contact-info h1 { 
+    font-size: 2rem; 
+    margin-bottom: 10px; 
+    color: #70AE6E;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.5;
+}
+.contact-info p { 
+    margin-bottom: 20px; 
+    color: var(--black, #252525);
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.info-item { 
+    display: flex; 
+    align-items: flex-start; 
+    margin-bottom: 15px; 
+}
+.info-item .icon { 
+    width: 24px; 
+    height: 24px; 
+    margin-right: 10px; 
+    background-size: contain; 
+    background-repeat: no-repeat; 
+}
+.icon.email { 
+    background-image: url("assets/email.png"); 
+}
+.icon.phone { 
+    background-image: url("assets/hp.png"); 
+}
+.icon.location { 
+    background-image: url("assets/loc.png"); 
+}
+.icon.clock { 
+    background-image: url("assets/time.png"); 
+}
+.info-item h4 { 
+    font-size: 1rem; 
+    margin-bottom: 2px; 
+    color: var(--black, #252525);
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.info-item p { 
+    font-size: 0.9rem; 
+    line-height: 1.4; 
+    color: var(--black, #252525);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.contact-form {
+    background: #70AE6D;
+    padding: 20px; 
+    border-radius: 20px; 
+    flex: 1 1 320px;
+    margin-top: 140px;
+}
+.contact-form form { 
+    display: flex; 
+    flex-direction: column; 
+}
+.contact-form label { 
+    margin-top: 15px; 
+    margin-bottom: 5px; 
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal; 
+}
+.contact-form input, .contact-form textarea {
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 15px;
+    font-size: 1rem; 
+    background: #fff;
+    font-style: Poppins;
+}
+.contact-form input::placeholder, .contact-form textarea::placeholder { 
+    color: #999; 
+    font-style: Poppins;
+}
+
+.submit-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-form button {
+    width: 40%;
+    margin-top: 20px; 
+    padding: 12px; 
+    background-color: #ffc72f;
+    border: none; 
+    border-radius: 24px; 
+    font-style: Poppins;
+    font-size: 1rem; 
+    cursor: pointer;
+    color: white;
+    box-shadow: 4px 4px 2px 0px rgba(0, 0, 0, 0.25);
+}
+  .contact-form button:hover { 
+    background-color: #e6b625; 
+}
+
+@media (max-width: 768px) { 
+    .contact-container { 
+      flex-direction: column; 
+    } 
+}
+@media (max-width: 480px) {
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+  width: 100%;
+}
+
+.contact-form button {
+  font-size: 1rem;
+  margin-bottom: 15px; 
+}
+
+.contact-form {
+  padding: 15px;
+}
+
+.contact-info h1 {
+  font-size: 28px;
+}
+
+.contact-info p {
+  font-size: 16px;
+}
+
+.info-item h4 {
+  font-size: 16px;
+}
+
+.info-item p {
+  font-size: 14px;
+}
+}

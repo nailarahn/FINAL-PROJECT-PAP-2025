@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+  --color-green: #70ae6d;
+  --color-yellow: #edaf2a;
+  --color-white: #ffff;
+  --color-black: #252525;
+  --green-hover: #659C62;
+  --green-active: #5A8A57;
+  --font-h1: 40px;
+  --font-sub: 32px;
+  --font-text: 20px;
+}
+html,body{
+    overflow-x: hidden;
+}
+body {
+  font-size: var(--font-text);
+  color: var(--color-black);
+  background-color: var(--color-white);
+  font-family: 'Poppins', sans-serif;
+}
+.navbar-nav{
+    gap: 20px;
+}
+.nav-link{
+    color: var(--color-green);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.nav-link:hover {
+    color: var(--green-hover);
+}
+.nav-link.active {
+    color: var(--green-active);
+}
+.dropdown-toggle{
+    color: var(--color-green);
+}
+.dropdown-toggle:focus,
+.dropdown-toggle:active,
+.dropdown-toggle::after,
+.show > .dropdown-toggle::after {
+  color: var(--green-active) !important;  
+}
+.dropdown-menu{
+    background-color: var(--color-white);
+    border: 1px solid var(--color-green);
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.dropdown-item {
+    color: var(--color-green);
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 20px;
+}
+.dropdown-item:hover {
+    color: var(--green-hover);
+}
+.dropdown-item:focus{
+    color: var(--green-active);
+    background-color: var(--color-green);
+    color: var(--color-white);
+}
+h1.title {
+  font-size: var(--font-h1);
+  font-weight: bold;
+  color: var(--color-green);
+}
+.btn-kembali {
+  background-color: #ffffff;
+  color: #6daf74;
+  border: 2px solid #6daf74;
+  transition: 0.3s;
+  margin-top: 100px;
+}
+.btn-kembali:hover {
+  background-color: #6daf74;
+  color: #ffffff;
+}
+.article-img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 24px;
+}
